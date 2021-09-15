@@ -26,10 +26,16 @@ body {
 }
 .d-flex {
   display: flex;
-  background-color: red;
+  /* background-color: red; */
 }
 .wd-50 {
   flex: 1 0 50%;
+}
+.wd-20 {
+  flex: 1 0 20%;
+}
+.wd-30 {
+  flex: 1 0 30%;
 }
 .wd-40 {
   flex: 1 0 40%;
@@ -62,6 +68,24 @@ body {
 .mb-2 {
   margin-bottom: 2rem;
 }
+.mt-5 {
+  margin-top: 5rem;
+}
+.dis-4 {
+  font-size: 5.5rem;
+  font-weight: 500;
+  line-height: 7rem;
+}
+.dis-3 {
+  font-size: 2.75rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+.dis-2 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+}
 
 /* ----- LOGIN PAGE ----- */
 .login__part {
@@ -72,11 +96,26 @@ body {
 }
 .login__part--left {
   width: 350px;
-  height: 70%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   /* background-color: green; */
+}
+.login__part--right {
+  background-size: cover;
+  position: relative;
+
+  background-image: url("https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=681&q=80");
+}
+.login__part--overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .login__logo--image {
   /* background-color: red; */
@@ -87,6 +126,10 @@ body {
   display: flex;
   justify-content: center;
 }
+.login__words-container {
+  color: white;
+}
+
 /* ----- BUTTONS ----- */
 .button {
   border: none;
