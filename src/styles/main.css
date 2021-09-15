@@ -1,0 +1,175 @@
+/* initial variables */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* best practice for inheritance*/
+}
+/* general configuration */
+html {
+  /* font-size: 10px; bad practice*/
+  font-size: 62.5%;
+
+  /* 10px/16px */
+}
+body {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+/* ----- UTILITIES -----*/
+.hg-100 {
+  height: 100vh;
+}
+.d-flex {
+  display: flex;
+  background-color: red;
+}
+.wd-50 {
+  flex: 1 0 50%;
+}
+.wd-40 {
+  flex: 1 0 40%;
+}
+.wd-60 {
+  flex: 1 0 60%;
+}
+.d-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.d-flex-vertical {
+  display: flex;
+  align-items: center;
+}
+.d-flex-horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+/* ----- LOGIN PAGE ----- */
+.login__part {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login__part--left {
+  width: 350px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* background-color: green; */
+}
+.login__logo--image {
+  /* background-color: red; */
+  /* height: 100px; */
+}
+.login__logo {
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+}
+/* ----- BUTTONS ----- */
+.button {
+  border: none;
+  padding: 1.5rem;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.button:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+.button--yellow {
+  background-color: #feab1b;
+}
+.button__label {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* ----- TITLES ----- */
+.login__title {
+  font-size: 3rem;
+  color: #616161;
+}
+
+/* ----- LINKS ----- */
+.link {
+  color: #32cfee;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 400;
+}
+.link:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+/* ----- CHECKBOX ----- */
+.checkbox__label {
+  font-size: 1.5rem;
+}
+
+/* ----- INPUTS ----- */
+input.input__form {
+  width: 100%;
+  border: 1px solid rgb(228, 228, 228);
+  appearance: none;
+  background-color: #fafafa;
+  padding: 1.2rem;
+  border-radius: 3px;
+  outline: none;
+}
+input.input__form:focus {
+  box-shadow: 0 0 10px 0 #f8b644;
+}
+label.input__label {
+  font-size: 1.2rem;
+  color: #616161;
+  font-weight: bold;
+}
+.input__warning {
+  font-size: 0.9rem;
+  color: #616161;
+}
+.inputWithicon input[type="password"] {
+  padding-left: 40px;
+}
+.inputWithicon {
+  position: relative;
+}
+.inputWithicon i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 3.6rem 1.5rem;
+  color: #aaa;
+}
+.inputWithicon input[type="password"]:focus + i {
+  color: #f8b644;
+}
+/* input[type="text"] {
+  border: 2px solid red;
+  border-radius: 4px;
+} */
