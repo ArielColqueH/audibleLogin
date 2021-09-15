@@ -59,6 +59,9 @@ body {
 .ml-1 {
   margin-left: 1rem;
 }
+.ml-3 {
+  margin-left: 3rem;
+}
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -77,9 +80,9 @@ body {
   line-height: 7rem;
 }
 .dis-3 {
-  font-size: 2.75rem;
+  font-size: 2.25rem;
   font-weight: 400;
-  line-height: 3rem;
+  line-height: 3.25rem;
 }
 .dis-2 {
   font-size: 1.75rem;
@@ -112,7 +115,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #342f35b3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,3 +219,116 @@ label.input__label {
   border: 2px solid red;
   border-radius: 4px;
 } */
+/* ----- NAVBAR ----- */
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5rem;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+.navbar ul li a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 1rem 0rem;
+}
+.navbar ul li a.active {
+  border-bottom: 3px solid #eb9a44;
+}
+
+/* media queries */
+@media only screen and (max-width: 1310px) {
+  .dis-4 {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 7rem;
+    padding: 0rem 5rem;
+    /* background-color: red; */
+  }
+  .wd-30 {
+    flex: 1;
+    padding: 0rem 10rem;
+  }
+  .wd-50 {
+    flex: 0;
+  }
+  .wd-20 {
+    flex: 0;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .dis-4 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .login__part--left {
+    width: 275px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .login__part--right {
+    display: none;
+  }
+  .login__part--left {
+    width: 400px;
+  }
+  .navbar ul li a {
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1rem 0rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .login__part--left {
+    width: 300px;
+  }
+  .navbar ul li a {
+    color: black;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: 1rem 0rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .login__part--left {
+    width: 250px;
+  }
+  .ml-3 {
+    margin-left: 1rem;
+  }
+  .navbar ul li a {
+    font-size: 1rem;
+  }
+  .login__title {
+    font-size: 2rem;
+  }
+}
+
+/* ----- cehckbox ------ */
+input[type="checkbox"] {
+  width: 10px !important;
+  height: 10px !important;
+  margin: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: 1px solid gray;
+  box-shadow: none;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1em;
+  background: white;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "✔";
+  color: #f8b644;
+}
