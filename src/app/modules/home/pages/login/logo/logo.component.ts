@@ -7,7 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LogoComponent implements OnInit {
   @Input() componentWidth: number = 0;
-  imagePath = '../../../../assets/images/audibleLogo.png';
+  imagePath =
+    'https://upload.wikimedia.org/wikipedia/commons/d/d2/Audible_logo.svg';
   constructor() {}
 
   ngOnInit(): void {
